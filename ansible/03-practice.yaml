@@ -12,3 +12,13 @@
         name: nginx
         state: started
         enabled: yes
+  tasks:
+    - name: install python
+      dnf:
+        name: python
+        state: present
+    -name: start python
+      ansible.builtin.service:
+        name: python
+        state: started
+        enabled: yes    
