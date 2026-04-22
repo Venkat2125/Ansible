@@ -17,7 +17,7 @@
       dnf:
         name: python
         state: present
-    -name: start python
+    - name: start python
       ansible.builtin.service:
         name: python
         state: started
