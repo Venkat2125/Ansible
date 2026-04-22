@@ -1,0 +1,13 @@
+- name: variables #ansible variables
+  hosts: local
+  connection: local
+  vars:
+    first_name: venkat
+    last_name: Ram
+    address: Bnglr
+  tasks:
+  - name: student details
+    ansible.builtin.debug:
+      msg: "student details: {{ first_name }}, last_name {{ last_name }}, address {{ address }}"
+
+
